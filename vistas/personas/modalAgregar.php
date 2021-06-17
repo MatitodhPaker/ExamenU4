@@ -13,13 +13,13 @@
       <div class="modal-body">
         <form id="frmAgregaPersona" method="post" onsubmit="return agregarNuevaPersona()">
             <label for="paterno">Apellido paterno</label>
-            <input type="text" class="form-control" id="paterno" name="paterno" required>
+            <input type="text" class="form-control" id="paterno" name="paterno" required pattern="[a-zA-Z]+" placeholder="Apellido paterno">
             <label for="materno">Apellido materno</label>
-            <input type="text" class="form-control" id="materno" name="materno" required>
+            <input type="text" class="form-control" id="materno" name="materno" required pattern="[a-zA-Z]+" placeholder="Apellido materno">
             <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" required>
+            <input type="text" class="form-control" id="nombre" name="nombre" required pattern="[a-zA-Z]+" placeholder="Nombre">
             <label for="telefono">Telefono</label>
-            <input type="text" class="form-control" id="telefono" name="telefono" required>
+            <input type="text" class="form-control" id="telefono" name="telefono" required pattern="[0-9]+" placeholder="55445889">
             <label for="email">Email</label>
             <input type="email" class="form-control" id="email" name="email" required>
             <br>
