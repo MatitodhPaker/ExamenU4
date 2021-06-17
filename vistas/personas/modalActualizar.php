@@ -11,7 +11,8 @@
         </button>
       </div>
       <div class="modal-body">
-        <form id="frmActualizaPersona" method="post" onsubmit="return agregarNuevaPersona()">
+        <form id="frmActualizaPersona" method="post" onsubmit="return actualizarPersona()">
+            <input type="text" id="idpersona" name="idpersona" hidden>
             <label for="paternou">Apellido paterno</label>
             <input type="text" class="form-control" id="paternou" name="paternou" required>
             <label for="maternou">Apellido materno</label>

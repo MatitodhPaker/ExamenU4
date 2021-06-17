@@ -24,9 +24,3 @@
 
 <?php include "footer.php"; ?>
 <script src="public/js/personas.js"></script>
-
-<script>
-    $(document).ready(function(){
-        $('#tablaPersonasLoad').load('vistas/personas/tablaPersonas.php');
-    });
-</script>
