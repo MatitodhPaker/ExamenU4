@@ -11,6 +11,7 @@ function agregarEquipo(){
         success:function(respuesta) {
             if (respuesta == 1) {
                 $('#tablaEquipoLoad').load('vistas/equipos/tablaEquipos.php');
+                $('#frmAgregarEquipo')[0].reset();
                 swal(":D","agregado con exito!","success");
             } else {
                 swal(":(","No se pudo agregar! " + respuesta ,"error");

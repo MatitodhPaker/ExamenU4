@@ -9,6 +9,7 @@ function agregarNuevaPersona() {
         success:function (respuesta) {
             if (respuesta == 1) {
                 $('#tablaPersonasLoad').load('vistas/personas/tablaPersonas.php');
+                $('#frmAgregaPersona')[0].reset();
                 swal(";D","agregado con exito!!!","success");
             } else {
                 swal(":´(","no se pudo agregar"+respuesta,"error");
